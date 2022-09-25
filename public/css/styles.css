@@ -1,7 +1,46 @@
 .input-group-text {
     width: 7rem;
+    padding: 0.5rem 0.7rem;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.input-group {
+    padding-bottom: 1rem;
 }
 
 .form-check {
-    margin: 0.5rem 2rem;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+.form-check-input:checked {
+    background-color: #6c757d;
+}
+
+.img-student {
+    height: 130px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #F5EFE6;
+}
+
+.card-header {
+    background-color: #1d3e5f;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 3%;
+    color: #1d3e5f;
+}
+
+.inner-card {
+    background-color: #768fa2;
+    color: #fff;
 }

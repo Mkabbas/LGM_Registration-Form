@@ -13,25 +13,27 @@ app.listen(3000, function() {
     console.log("Server is running at Port 3000.");
 });
 
-// localStorage.setItem('Enrolled Students', []);
 
 app.get("/", function(req, res) {
-    // const students = JSON.parse(localStorage.getItem('key1')).name;
+    const studentsList = JSON.parse(localStorage.getItem('Enrolled Students') || '[]');
     res.render('home', {
-        students: []
+        students: studentsList
     });
 });
 
 app.post('/', function(req, res) {
-    const obj = {
+    const newStudent = {
         name: req.body.name,
         email: req.body.email,
         website: req.body.website,
-        imgae: req.body.image,
+        image: req.body.image,
         gender: req.body.gender,
         skills: req.body.skills
-    }
-    console.log(obj);
+    };
+    const studentsList = JSON.parse(localStorage.getItem('Enrolled Students') || '[]');
+    studentsList.push(newStudent);
+    localStorage.setItem('Enrolled Students', JSON.stringify(studentsList));
     res.redirect('/');
-    // localStorage.setItem('key1', JSON.stringify(obj));
 });
+
+// localStorage.clear();
