@@ -1,8 +1,10 @@
 .input-group-text {
     width: 7rem;
     padding: 0.5rem 0.7rem;
-    background-color: #6c757d;
-    color: #fff;
+    background-color: #d4e1ee;
+    color: #1d3e5f;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .input-group {
@@ -26,21 +28,29 @@
 
 body {
     background-color: #F5EFE6;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-header {
+    padding-top: 1rem;
     background-color: #1d3e5f;
     color: #fff;
 }
 
 h1 {
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-weight: 600;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 3%;
     color: #1d3e5f;
 }
 
 .inner-card {
-    background-color: #768fa2;
-    color: #fff;
+    background-color: #e5dfd5;
+    color: #1d3e5f;
+}
+
+.card-title {
+    font-weight: 600;
 }
